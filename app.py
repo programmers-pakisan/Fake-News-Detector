@@ -30,7 +30,7 @@ if st.button("Check News"):
         prediction = model.predict(vector)
 
         # Result
-        if prediction[0] == 0:
-            st.error("⚠️ Fake News")
-        else:
-            st.success("✅ Real News")
+      if prediction[0] == 1:
+    st.error("⚠️ Fake News")
+else:
+    st.success("✅ Real News")
